@@ -5,20 +5,19 @@
 ---
 
 ### Q1. 下载本地索引模型一直转圈 / 失败怎么办？
-**原因**：默认源在校园网环境下可能受限或速度极慢。
+**原因**：校园网波动，或系统全局代理干扰了内置模型分发源连接。
 **解决**：
-1. 打开 Nowledge Mem -> **Settings -> Models**。
-2. 将 **Model Repository（模型下载源）** 切换为 **ModelScope（魔搭）**。
-3. 点击重试下载。如果开着全局代理反而下载慢，可以尝试暂时关闭代理再试。
+1. 打开 Nowledge Mem -> **设置（Settings）-> AI 模型（AI models）**，点击重试下载。
+2. 如果开着全局代理下载反而变慢或失败，尝试暂时关闭代理再试，或切手机热点测试。
 
 ---
 
 ### Q2. 终端输入 `nmem doctor` 提示 `command not found` 或「不是内部或外部命令」
-**原因**：没有安装内置 CLI，或者安装后没有重开终端导致环境变量（PATH）没刷新。
+**原因**：CLI 还没写入终端 PATH，或者安装后没有重开终端导致环境变量没刷新。
 **解决**：
-1. 回到 Nowledge Mem -> **Settings -> Preferences -> Developer Tools**，重新点击一次 **Install bundled CLI**，确认弹出成功提示。
-2. **彻底关闭当前所有的终端/PowerShell 窗口**，重新打开一个新窗口再输入 `nmem doctor`。
-3. `[Windows]` 如果仍提示找不到，检查是否安装了杀毒软件拦截了脚本执行，或重启一次电脑让用户环境变量生效。
+1. 回到 Nowledge Mem -> **设置（Settings）-> 通用（General）-> 开发者工具（Developer Tools）-> 命令行界面（Command Line Interface）**，查看卡片提示并点击修复/写入 PATH（如果顶部栏有 **CLI 设置** 提示也可以直接点）。
+2. **彻底关闭当前所有的终端/PowerShell 窗口**，重新打开一个新窗口再输入 `nmem doctor`（zsh 用户也可以执行 `rehash`）。
+3. `[Windows]` 如果仍提示找不到，检查是否被杀毒软件拦截，或重启一次电脑让用户环境变量生效。
 
 ---
 

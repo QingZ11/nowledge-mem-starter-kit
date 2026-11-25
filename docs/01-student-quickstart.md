@@ -24,40 +24,40 @@
 
 ---
 
-## 第二步：配置国内下载源 + 初始化本地搜索（4 分钟）
+## 第二步：确认本地索引模型就绪（3 分钟）
 
-为了让本地检索能顺畅下载模型，**强烈建议先确认下载源**：
+Nowledge Mem 内置了模型分发源，**不需要手动切换下载源，也不需要代理**，按下面检查即可：
 
-1. 打开 Nowledge Mem 左下角/右上角的 **Settings（设置）-> Models（模型）**。
-2. 找到 **Model Repository（模型下载源）**：
-   - 在中国大陆网络环境下，切换为 **ModelScope（魔搭）**，下载速度更快且不需要代理。
-3. 下载默认的 **Search Index Model（本地索引模型）**，等待进度条完成并显示 `Ready / Active`。
-4. **关于「本地大语言模型（Local LLM）」的双系统建议**：
-   - **`[Windows]`**：普通轻薄本默认用 CPU 跑本地大模型会比较慢且容易发热，**这一步可以先不下载 Local LLM**，只装好索引模型即可；如果需要自动提炼记忆或使用 AI Now，建议在 [02. 接入国产大模型](02-domestic-models.md) 里接 DeepSeek API（几块钱够用一学期）。
-   - **`[macOS]`**：Apple Silicon（M 系列芯片）可以顺畅运行本地小模型，有余力可以下载体验，也可以直接接 DeepSeek API。
+1. 打开 Nowledge Mem 左侧的 **设置（Settings）-> AI 模型（AI models）**。
+2. 确认本地 **索引模型（Search Index Model）** 已下载并处于就绪状态（如果还没下载，展开下方模型管理区点击下载即可）。
+3. **关于「本地 LLM（Local LLM）」的双系统建议**：
+   - **`[Windows]` / 老款 Intel Mac**：如果没有可用的 GPU 加速，界面也会提示「本地 LLM 只能靠 CPU 运行，后台提炼会非常慢且容易发热」。**这一步不需要下载本地 LLM**，只保留索引模型即可；需要记忆提炼或 AI Now 时，可在 [02. 接入国产大模型](02-domestic-models.md) 里切到「服务商（Providers）」接入 DeepSeek API（几块钱够用一学期）。
+   - **`[macOS]`（Apple Silicon M 系列）**：有 GPU 加速，本地体验较顺畅，也可以按需切到 DeepSeek API。
 
 > **验收标准**：在 Mem 主界面手动新建一条测试记忆（例如：`我是一名计算机专业学生，本学期正在修《智能体》课程，打算用 Nowledge Mem 做长期记忆实验。`），在顶部搜索框输入 `智能体`，能够立刻搜到这条记忆。
 
 ---
 
-## 第三步：一键安装 `nmem` 命令行工具（2 分钟）
+## 第三步：确认 `nmem` 命令行工具可用（2 分钟）
 
-WorkBuddy 的自动捕获功能需要依赖本机的 `nmem` CLI。**不需要自己装 Python 或手动配环境**，直接用桌面端内置按钮一键安装：
+WorkBuddy 的自动捕获功能依赖本机的 `nmem` CLI。Nowledge Mem 桌面端会自动配置它，**不需要自己装 Python**：
 
-1. 在 Nowledge Mem 中打开 **Settings（设置）-> Preferences（偏好设置）-> Developer Tools（开发者工具）**。
-2. 点击 **Install bundled CLI（安装内置 CLI）**，等待提示安装成功。
-3. 验证是否安装成功：
-   - **`[Windows]`**：**重新打开**一个新的 **PowerShell**（或「命令提示符 / 终端」），输入以下命令并回车：
+1. 打开 **设置（Settings）-> 通用（General）**，往下滑找到 **开发者工具（Developer Tools）-> 命令行界面（Command Line Interface）**。
+2. 看卡片右侧状态：
+   - 如果显示绿色 **已验证（Verified）**，说明已经就绪；
+   - 如果显示 **还不能用（Not working yet）**，或顶部栏提示 **CLI 设置（CLI setup）**，按卡片上的按钮完成安装/写入 PATH（macOS 若弹出管理员授权请点允许）。
+3. 在终端里做一次最终验证：
+   - **`[Windows]`**：**新开**一个 **PowerShell**（或「命令提示符 / 终端」），输入并回车：
      ```powershell
      nmem doctor
      ```
-   - **`[macOS]`**：新开一个 **「终端（Terminal）」** 应用，输入以下命令并回车：
+   - **`[macOS]`**：新开一个 **「终端（Terminal）」** 应用，输入并回车：
      ```bash
      nmem doctor
      ```
 
 > **验收标准**：终端输出显示连接本地 Mem 服务正常（没有报错 `command not found` 或 `不是内部或外部命令`）。
-> *注意：如果你在点击安装前就已经开着终端窗口，**必须关掉重开一个新窗口**，环境变量才会生效。*
+> *注意：如果安装前就已经开着终端窗口，**必须关掉重开一个新窗口**，环境变量才会生效。*
 
 ---
 
