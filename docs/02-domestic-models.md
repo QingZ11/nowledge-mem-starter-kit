@@ -47,13 +47,14 @@ Nowledge Mem 的官方浏览器插件原生支持主流国产网页端 AI，包�
 
 > **安全提醒**：API Key 相当于你的钱包密码，**绝对不要截图发到课程群、不要提交到 GitHub 仓库**！
 
-### 2. 在 Nowledge Mem 中填入配置
+### 2. 在 Nowledge Mem 中填入配置（已内置国产服务商，免填接口地址）
 1. 打开 Nowledge Mem -> **设置（Settings）-> AI 模型（AI models）**，切换到顶部的 **服务商（Providers）** 标签页。
-2. 添加 **DeepSeek**（或选择 **OpenAI Compatible / 自定义 OpenAI 兼容接口**），按如下信息填写：
-   - **Base URL**：`https://api.deepseek.com`（若界面要求带版本路径可填 `https://api.deepseek.com/v1`）
-   - **API Key**：粘贴你刚才复制的 Key
-   - **推荐模型**：`deepseek-chat`（性价比高、响应快，适合日常记忆提炼与问答）
-3. 测试连接通过后，切回顶部的 **AI 模型（AI models）** 标签页，在下拉选项里把模型切换为你刚配好的 DeepSeek。
+2. 点击 **添加服务商（Add Provider）**。
+3. 在内置服务商列表中直接选择 **DeepSeek**（默认已预填接口地址 `https://api.deepseek.com/v1`，无需手动填写）。
+   - *注：列表里同样直接内置了 **通义千问（Qianwen）**、**Kimi（Moonshot）**、**智谱（Z.AI / GLM）**、**MiniMax**、**小米 MiMo** 等国产服务商；如果你用其他中转或硅基流动，选「添加自定义服务商」填 OpenAI 兼容接口即可。*
+4. 在 **API 密钥（API Key）** 栏粘贴你刚才复制的 Key，在 **模型（Model）** 下拉框选择模型（例如 `deepseek-v4-flash` / `deepseek-v4-pro`，也可点 **获取模型** 拉取最新列表）。
+5. 点击 **测试连接（Test Connection）**，看到 **连接成功** 后点击 **保存服务商（Save Provider）**，并点击 **设为默认（Use as Default）**。
+6. 切回顶部的 **AI 模型（AI models）** 标签页，确认上方模型已切换为刚才配置好的 DeepSeek。
 
 *(同理，通义千问 DashScope、硅基流动 SiliconFlow、智谱 GLM、Kimi Moonshot 等只要提供 OpenAI 兼容接口的国产平台，都可以用完全相同的方法接入。)*
 

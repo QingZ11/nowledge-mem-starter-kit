@@ -63,39 +63,33 @@ WorkBuddy 的自动捕获功能依赖本机的 `nmem` CLI。Nowledge Mem 桌面�
 
 ## 第四步：接入 WorkBuddy（课堂核心实战，6 分钟）
 
-### 4.1 添加插件市场并安装
+WorkBuddy 桌面端通过 **连接器 / MCP** 接入 Nowledge Mem（所有桌面端版本通用）。
+
+### 4.1 获取本机 MCP 配置
+在终端（Windows 用 PowerShell，macOS 用「终端」）输入并回车：
+```bash
+nmem config mcp show --host workbuddy
+```
+终端会打印出本机的 MCP 地址（默认 `http://127.0.0.1:14242/mcp`）和请求头（包含 `x-nmem-space-protocol: exact-v1`），先留着备用。
+
+### 4.2 在 WorkBuddy 桌面端添加连接器 / MCP
 1. 打开 **WorkBuddy 桌面端**。
-2. 进入 **Plugins（插件）-> 点击 `+` 号**（添加插件市场）。
-3. **完整复制并粘贴**下面这行地址（**一个字符都不要少，不要只填仓库名**）：
-   ```text
-   https://raw.githubusercontent.com/nowledge-co/community/main/.workbuddy-plugin/marketplace.json
-   ```
-   > **为什么必须填完整地址？** 社区仓库同时包含 CodeBuddy 和 WorkBuddy 插件，只填仓库名可能会误装成 CodeBuddy 版本。
-4. 在出现的 **nowledge-community** 列表中找到 **Nowledge Mem**，点击 **Install（安装）**。
+2. 进入左侧栏 **「专家·技能·连接器」-> 连接器 -> 添加自定义连接器（MCP）**（部分版本入口在左下角 **头像/设置（齿轮）-> MCP -> 添加 MCP**）。
+3. 将上一步终端输出的 **URL 和请求头（headers）** 完整填入，保存并启用。
+4. 如果弹出安全审批/信任提示，**手动点击允许 / Trust**，然后**重启 WorkBuddy**。
 
-*(如果校园网访问 `raw.githubusercontent.com` 超时，请直接看 [03. 常见报错与排坑速查表](03-faq-troubleshooting.md#q3-workbuddy-添加插件地址一直转圈或报错)。)*
-
-### 4.2 重启并手动授权 Trust（最容易漏的一步！）
-1. 安装完成后，确认插件和 Skill 均处于 **开启（Enabled）** 状态。
-2. **完全退出并重新打开 WorkBuddy**（或点击 Reload）。
-3. 打开 WorkBuddy 的 **Connections / MCP（连接与 MCP）** 设置页面，找到 `nowledge-mem`。
-4. 如果看到信任提示，**手动点击 Trust（信任）**。
-   > 安全说明：MCP 连接授权必须由用户本人确认，不会自动静默开启。
+> **提示**：如果你使用的 WorkBuddy 版本（或 CLI）支持插件市场，也可以直接添加官方插件源 `https://raw.githubusercontent.com/nowledge-co/community/main/.workbuddy-plugin/marketplace.json` 安装完整插件（额外支持对话自动归档 Hook）。使用手动 MCP 连接器时，可随时在终端运行 `nmem t sync --from workbuddy --apply` 同步历史会话。
 
 ### 4.3 课堂验收小实验（亲眼看到 AI 记住你）
-1. 在 WorkBuddy 里**新建一个空白对话**。
-2. 输入下面这句话并发送：
+1. 在 WorkBuddy 里**新建一个任务 / 空白对话**。
+2. 如果输入框左下角有 **连接器** 开关，确认已勾选开启 `nowledge-mem`。
+3. 输入下面这句话并发送：
    ```text
-   请用 nowledge-mem 查一下我现在的上下文和关于「智能体课程」的记忆。
+   请用 nowledge-mem 查一下我现在的上下文和关于「大模型与 AI 智能体」的记忆。
    ```
-3. 观察现象：
+4. 观察现象：
    - WorkBuddy 会调用 `nowledge-mem` 的 MCP 工具进行检索；
    - 它会准确说出你在第二步里存下的「计算机专业 / 《大模型与 AI 智能体》课程」信息。
-4. 再验证自动归档：和它随便聊两句后，回到终端执行：
-   ```bash
-   nmem t list --source workbuddy -n 5
-   ```
-   或者直接回到 Nowledge Mem 的 **Threads（对话）** 页面，可以看到刚才的 WorkBuddy 对话已经同步进来。
 
 > **恭喜通关！** 到这里你已经完成了课堂主线全部要求。
-> 接下来强烈推荐花 5 分钟完成 [02. 接入 DeepSeek 等国产大模型](02-domestic-models.md)，把你平时免费用的 DeepSeek / 豆包 / Kimi 也连到同一个记忆库里。
+> 接下来强烈推荐花 5 分钟完成 [02. 接入 DeepSeek 等国产大模型](02-domestic-models.md)，给 Mem 接上国产大模型大脑，或者把网页版 AI 也连到同一个记忆库里。
