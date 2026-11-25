@@ -12,8 +12,6 @@
 
 ## 方案 A：零成本接入 DeepSeek / 豆包 / Kimi 等网页版（5 分钟）
 
-> **配套视频**：*[此处插入 短视频 3：DeepSeek 网页版与 WorkBuddy 联动（约 60 秒）]*
-
 Nowledge Mem 的官方浏览器插件原生支持主流国产网页端 AI，包括：
 - **DeepSeek**（`chat.deepseek.com`）
 - **Kimi**、**豆包**、**通义千问**、**腾讯元宝**、**智谱清言**、**MiniMax**
