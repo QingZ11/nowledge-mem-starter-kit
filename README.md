@@ -5,14 +5,35 @@
 
 ---
 
-## 一、跟着 4 段短视频直接上手（每段不到 1 分钟，静音可看）
+## 一、跟着 4 段短视频直接上手（每段不到 1 分钟，点击即可在线播放）
 
-> 点击链接即可直接下载 / 播放高清带字幕演示视频（全部不到 3 MB）：
+<details open>
+<summary><strong>01. 首次启动：下载本地索引模型 + 创建第一条记忆（50 秒）</strong></summary>
 
-1. **[01. 首次启动：下载本地索引模型 + 创建第一条记忆（50 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/01-setup-and-first-memory.mp4)**
-2. **[02. WorkBuddy 通过 MCP 接入 Nowledge Mem 并召回记忆（70 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/02-workbuddy-mcp.mp4)**
-3. **[03. 在 Nowledge Mem 配置 DeepSeek 模型 + AI Now 中文问答（45 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/03-deepseek-provider.mp4)**
-4. **[04. DeepSeek 网页版插件同步/提炼 → WorkBuddy 跨工具召回（64 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/04-deepseek-web-extension.mp4)**
+https://github.com/user-attachments/assets/d7ffa7a9-8872-4198-a6ee-4c0e7cfbafb2
+
+</details>
+
+<details>
+<summary><strong>02. WorkBuddy 通过 MCP 接入 Nowledge Mem 并召回记忆（71 秒）</strong></summary>
+
+https://github.com/user-attachments/assets/70b9f9ac-be49-4dce-b9d6-6d21c92d5bcb
+
+</details>
+
+<details>
+<summary><strong>03. 在 Nowledge Mem 配置 DeepSeek 模型 + AI Now 中文问答（47 秒）</strong></summary>
+
+https://github.com/user-attachments/assets/2d55a66a-8c2a-403d-bcc7-4d0ef69d94bd
+
+</details>
+
+<details>
+<summary><strong>04. DeepSeek 网页版插件同步/提炼 → WorkBuddy 跨工具召回（64 秒）</strong></summary>
+
+https://github.com/user-attachments/assets/4f148223-bf3d-4459-9f43-f45ede9225a9
+
+</details>
 
 ---
 

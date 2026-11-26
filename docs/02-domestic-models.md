@@ -12,7 +12,7 @@
 
 ## 方案 A：零成本接入 DeepSeek / 豆包 / Kimi 等网页版（5 分钟）
 
-> **演示视频**：[04. DeepSeek 网页版插件同步/提炼 → WorkBuddy 跨工具召回（64 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/04-deepseek-web-extension.mp4)
+https://github.com/user-attachments/assets/4f148223-bf3d-4459-9f43-f45ede9225a9
 
 Nowledge Mem 的官方浏览器插件原生支持主流国产网页端 AI，包括：
 - **DeepSeek**（`chat.deepseek.com`）
@@ -39,7 +39,7 @@ Nowledge Mem 的官方浏览器插件原生支持主流国产网页端 AI，包�
 
 ## 方案 B（选修）：在 nmem 内部配置 DeepSeek API
 
-> **演示视频**：[03. 在 Nowledge Mem 配置 DeepSeek 模型 + AI Now 中文问答（45 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/03-deepseek-provider.mp4)
+https://github.com/user-attachments/assets/2d55a66a-8c2a-403d-bcc7-4d0ef69d94bd
 
 > **什么时候需要配这个？**
 > 当你想使用 nmem 内置的 **AI Now**、**自动从长对话中提炼记忆（Distillation）**、或 **Smart Feed**，但电脑跑本地小模型太慢/发烫时（特别是 Windows 轻薄本），配一个 DeepSeek API 体验会立刻起飞。
