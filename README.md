@@ -5,7 +5,18 @@
 
 ---
 
-## 一、你应该先看哪一篇？
+## 一、跟着 4 段短视频直接上手（每段不到 1 分钟，静音可看）
+
+> 点击链接即可直接下载 / 播放高清带字幕演示视频（全部不到 3 MB）：
+
+1. **[01. 首次启动：下载本地索引模型 + 创建第一条记忆（50 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/01-setup-and-first-memory.mp4)**
+2. **[02. WorkBuddy 通过 MCP 接入 Nowledge Mem 并召回记忆（70 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/02-workbuddy-mcp.mp4)**
+3. **[03. 在 Nowledge Mem 配置 DeepSeek 模型 + AI Now 中文问答（45 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/03-deepseek-provider.mp4)**
+4. **[04. DeepSeek 网页版插件同步/提炼 → WorkBuddy 跨工具召回（64 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/04-deepseek-web-extension.mp4)**
+
+---
+
+## 二、图文手册导航
 
 | 你的需求 | 点这里开始 | 预计耗时 |
 | --- | --- | --- |
@@ -16,7 +27,7 @@
 
 ---
 
-## 二、30 秒看懂：Nowledge Mem 是什么？
+## 三、30 秒看懂：Nowledge Mem 是什么？
 
 在智能体（AI Agent）架构中，一个完整的 Agent 通常由三个核心部分组成：
 
@@ -41,7 +52,7 @@
 
 ---
 
-## 三、常用官方链接
+## 四、常用官方链接
 
 - 软件下载（Windows / macOS）：https://mem.nowledge.co/download
 - 官方文档：https://mem.nowledge.co/docs

@@ -26,6 +26,8 @@
 
 ## 第二步：确认本地索引模型就绪（3 分钟）
 
+> **演示视频**：[01. 下载本地索引模型 + 创建第一条记忆（50 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/01-setup-and-first-memory.mp4)
+
 Nowledge Mem 内置了模型分发源，**不需要手动切换下载源，也不需要代理**，按下面检查即可：
 
 1. 打开 Nowledge Mem 左侧的 **设置（Settings）-> AI 模型（AI models）**。
@@ -62,6 +64,8 @@ WorkBuddy 的自动捕获功能依赖本机的 `nmem` CLI。Nowledge Mem 桌面�
 ---
 
 ## 第四步：接入 WorkBuddy（课堂核心实战，6 分钟）
+
+> **演示视频**：[02. WorkBuddy 通过 MCP 接入 Nowledge Mem 并召回记忆（70 秒）](https://github.com/QingZ11/nowledge-mem-starter-kit/releases/download/v1.0-videos/02-workbuddy-mcp.mp4)
 
 WorkBuddy 桌面端通过 **连接器 / MCP** 接入 Nowledge Mem（所有桌面端版本通用）。
 
